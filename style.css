@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 312px;
+    align-items: center;
+
+    background-image: linear-gradient(rgb(108, 174, 201), rgba(168, 215, 230, 0)), url(./img/images.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+header {
+    height: 55px;
+    background-color: rgb(253, 248, 248);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+header .h {
+    font-size: 18px;
+    color: rgb(0, 201, 201);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.fa-instalod {
+    font-size: 30px;
+}
+
+header .a a {
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+header .b {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 201, 201);
+
+    height: 27px;
+    width: 160px;
+    text-align: center;
+    padding-top: 3px;
+
+    border-radius: 7px 7px 7px 7px;
+    font-weight: bold;
+}
+
+section .head {
+
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+
+    width: 100%;
+
+
+
+
+    font-size: 40px;
+}
+
+section .para {
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+    padding-top: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 30px;
+    gap: 40px;
+
+
+}
+
+.btn .b1,
+.b2 {
+    width: 90px;
+    height: 30px;
+
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+
+}
+
+.line {
+
+    text-align: center;
+
+    padding-top: 20px;
+
+}
+
+.line .h1 {
+    font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.line .p2 {
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+
+
+    width: 100%;
+    height: 220px;
+    gap: 20px;
+    padding-top: 30px;
+
+
+}
+
+.one {
+
+
+    padding-top: 10px;
+    width: 270px;
+    height: 160px;
+    text-align: center;
+    background-color: rgba(248, 248, 248, 0.911);
+    box-shadow: 0px 7px 17px gainsboro;
+
+
+
+}
+
+.one .h {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.one .p {
+    font-size: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-top: 13px;
+}
+
+.fa-hospital,
+.fa-box,
+.fa-user-doctor {
+    font-size: 32px;
+    background: rgb(5, 95, 95);
+    color: aliceblue;
+    height: 60px;
+    width: 60px;
+    padding-top: 9px;
+    border-radius: 100%;
+}
+
+.btn :hover {
+    background: rgba(128, 141, 151, 0.712);
+    cursor: pointer;
+}
+
+header .a :hover {
+    background-color: aqua;
+
+}
+
+header .b:hover {
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}
+
+header .fa-bars {
+    display: none;
+}
+
+@media (max-width: 840px) {
+    header .a {
+        display: none;
+    }
+
+    header .fa-bars {
+        display: flex;
+    }
+
+    header .b {
+        padding-top: 7px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    section .head {
+        font-size: 23px;
+    }
+
+    section .para {
+        font-size: 12px;
+    }
+
+    .fa-hospital,
+    .fa-box,
+    .fa-user-doctor {
+        font-size: 22px;
+        background: rgb(5, 95, 95);
+        color: aliceblue;
+        height: 40px;
+        width: 40px;
+        padding-top: 9px;
+        border-radius: 100%;
+    }
+
+    .last .one .h {
+        font-size: 9px;
+        padding: 2%;
+    }
+
+    .last .one .p {
+        font-size: 8px;
+        padding: 2%;
+    }
+
+    header .b {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 201, 201);
+
+        text-align: center;
+        padding-top: 6px;
+
+        border-radius: 7px 7px 7px 7px;
+        font-weight: bold;
+        font-size: 12px;
+        width: fit-content;
+    }
+
+    @media (max-width: 300px) {
+        header .b {
+            display: none;
+        }
+
+        .last .one {
+            height: auto;
+
+        }
+
+        .line .h1 {
+            font-size: 12px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-top: 0%;
+        }
+
+        .line .p2 {
+            font-size: 8px;
+            padding-top: 1px;
+            font-weight: bold;
+        }
+
+        section .head {
+            font-size: 18px;
+        }
+
+        section .para {
+            font-size: 12px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+
+            padding-top: 20px;
+            gap: 40px;
+
+
+        }
+
+        .btn .b1,
+        .b2 {
+            width: 60px;
+            height: 20px;
+
+            color: rgb(0, 0, 0);
+            background-color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 7px;
+
+        }
+    }
+
+
+}
